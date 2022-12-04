@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { RouterProvider, createBrowserRouter} from 'react-router-dom'
 import './App.css';
+import PaginaBuscador from './paginas/PaginaBuscador';
+import Error404 from './paginas/error404';
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <PaginaBuscador />,
+  },
+  {
+    path: '*',
+    element: <Error404 />,
+  },
+  ]);
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={router} />
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.input{
+    margin-bottom: 20px;
+    width: 100% !important;
+    border-radius: 50px !important;
+}
+.botones{
+    display:flex;
+    justify-content: center;
+}

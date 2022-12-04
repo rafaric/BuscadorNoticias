@@ -1,0 +1,33 @@
+
+.logo{
+  background: rgb(15,163,177);
+  background: linear-gradient(180deg, rgba(15,163,177,1) 0%, rgba(15,163,200,1) 100%);
+  padding: 25px  0 !important;
+  border-bottom: 1px solid #FCA311 !important;
+
+} 
+.textoheader{
+  padding: 8px !important;
+  font-size: 5rem;
+  color:#FCA311;
+  font-weight: 300;
+}
+.loader{
+  padding-top: 100px !important;
+  margin-top: 100px !important;
+}
+.noticias{
+  min-height:100vh;
+  margin: auto;
+}
+.footer{
+  height: 50px;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #FCA311;
+  background-color: #0FA3B1;
+  padding: 10px;
+}

@@ -1,0 +1,33 @@
+.tarjeta{
+    width: 100% !important;
+    min-height: 150px;
+    display:inline!important;
+    border-radius: 10px !important;
+    border: 1px solid #FCA311 !important;
+
+}
+.titular{
+    display:flex !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center !important;
+
+}
+
+.img{
+    float:left;
+    border-radius: 10px;
+    min-height: 80% !important;
+    margin-top: 14px;
+    margin-left: 4px;
+}
+.contenido{
+    padding-left: 180px !important;
+    align-items: stretch;
+    
+}
+.source{
+    padding-bottom: 1rem;
+    color: #FCA311;
+    font-weight: 800;
+}
