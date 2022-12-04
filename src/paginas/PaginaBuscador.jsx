@@ -73,7 +73,7 @@ const PaginaBuscador = () => {
             <Buscador onBuscar={onBuscar} onLimpiar={ onLimpiar } />
             
             { isLoading && <Loading /> }
-            { noticias && <p>Está viendo 10 noticias de {totalResults} resultados</p>}
+            { noticias && <p>Está viendo {cantidadPaginas>0 ? cantidadPaginas : 0} noticias de {totalResults} resultados</p>}
             { (totalResults === 0) && <p>No hubo resultados para su busqueda</p>}
             { noticias && <ListadoNoticias noticias={noticias}/> }
             { noticias && <Paginador cantidadPaginas={cantidadPaginas} onChange={onCambioPagina} /> }
